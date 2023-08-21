@@ -7,7 +7,6 @@
 body {
   background-image: url('onam-festival-symbol-painti.jpg');
   background-size: cover;
-  backdrop-filter: blur(10px);
   overflow: hidden;
 }
 
@@ -25,7 +24,7 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   color: #ffbb00;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .roller {
@@ -80,7 +79,7 @@ h1 {
     text-align: center;
     text-transform: uppercase;
     color: #ffbb00;
-    font-size: 2.125rem;
+    font-size: 2rem;
   }
 
   .roller {
@@ -153,4 +152,52 @@ h1 {
   color: transparent;
   display: inline-block;
   padding: 10px;
+  font-size: smaller;
+}
+
+/* Add a media query for smaller screens */
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 1rem;
+    /* Adjust the font size as needed */
+  }
+
+  .roller {
+    height: 1.4rem;
+    /* Adjust the height as needed */
+    line-height: 1.2rem;
+    /* Adjust the line height as needed */
+  }
+
+  #spare-time {
+    font-size: 0.7rem;
+    /* Adjust the font size as needed */
+    letter-spacing: 0.03rem;
+    /* Adjust the letter spacing as needed */
+  }
+
+  .roller #rolltext {
+    animation: slide-mob 5s infinite;
+  }
+
+  @keyframes slide-mob {
+    0% {
+      top: 0;
+    }
+
+    25% {
+      top: -1rem;
+      /* Adjust the value as needed */
+    }
+
+    50% {
+      top: -2rem;
+      /* Adjust the value as needed */
+    }
+
+    72.5% {
+      top: -3rem;
+      /* Adjust the value as needed */
+    }
+  }
 }
