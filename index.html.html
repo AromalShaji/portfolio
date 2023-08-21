@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - CSS Rolling Text</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Arvo:wght@700&amp;display=swap'>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    /* Additional responsive styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arvo', sans-serif;
+      background-color: #849707;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .main {
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    /* Adjustments for smaller screens */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      #spare-time {
+        font-size: 0.8rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <h1><div class="name">supercalifragilisticexpialidocious</div>
+      <div class="roller">
+        <span id="rolltext">extraordinarily good<br />
+          wonderful<br />
+          <span id="spare-time">Yes it is a real word!</span><br />
+        </span>
+      </div>
+      <div class="mavali">
+        <img id="animatedImage" src="/WhatsApp Image 2023-08-21 at 23.57.57-fotor-bg-remover-202308220156.png"
+          alt="Mavali Image">
+      </div>
+    </h1>
+  </div>
+</body>
+
+</html>
