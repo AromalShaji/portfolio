@@ -29,8 +29,8 @@ body {
   justify-content: center;
   position: absolute;
   top: 10px;
-  width: 80px;
-  height: 140px;
+  width: 130px;
+  height: 200px;
 }
 
 h1 {
@@ -91,8 +91,9 @@ h1 {
   h1 {
     text-align: center;
     text-transform: uppercase;
-    color: rgb(63, 47, 0);
+    color: rgb(172, 132, 10);
     font-size: 20px;
+    font-weight: bolder ;
   }
 
   .roller {
