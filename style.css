@@ -5,11 +5,15 @@
 }
 
 body {
-  background-image: url('onam-festival-symbol-painti.jpg');
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('onam-festival-symbol-painti.jpg') no-repeat center center fixed;
   background-size: cover;
-  overflow: hidden;
 }
-
 
 .main {
   height: 100vh;
@@ -20,11 +24,20 @@ body {
   text-align: center;
 }
 
+.small-image {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 50px;
+  height: 80px;
+}
+
 h1 {
   text-align: center;
   text-transform: uppercase;
-  color: #ffbb00;
-  font-size: 3rem;
+  color: rgb(63, 47, 0);
+  font-size: 4rem;
+  font-weight: bold;
 }
 
 .roller {
@@ -36,7 +49,6 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-
   color: #1D3557;
 }
 
@@ -46,7 +58,7 @@ h1 {
   font-style: italic;
   letter-spacing: 1rem;
   margin-top: 0;
-  color: #0f0049;
+  color: #00292b;
 
 }
 
@@ -78,8 +90,8 @@ h1 {
   h1 {
     text-align: center;
     text-transform: uppercase;
-    color: #ffbb00;
-    font-size: 2rem;
+    color: rgb(63, 47, 0);
+    font-size: 20px;
   }
 
   .roller {
@@ -111,93 +123,6 @@ h1 {
 
     72.5% {
       top: -6.375rem;
-    }
-  }
-}
-
-.mavali {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-}
-
-.mavali img {
-  width: 200px;
-  /* Adjust the image width as needed */
-  display: block;
-}
-
-#animatedImage {
-  animation: fadeInOut 4s ease infinite;
-}
-
-@keyframes fadeInOut {
-
-  0%,
-  100% {
-    opacity: 0.5;
-    /* Change the opacity as needed */
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-.name {
-  background: linear-gradient(45deg, #ff9900, #fff200);
-  /* Adjust colors and direction as needed */
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  display: inline-block;
-  padding: 10px;
-  font-size: smaller;
-}
-
-/* Add a media query for smaller screens */
-@media screen and (max-width: 400px) {
-  h1 {
-    font-size: 1rem;
-    /* Adjust the font size as needed */
-  }
-
-  .roller {
-    height: 1.4rem;
-    /* Adjust the height as needed */
-    line-height: 1.2rem;
-    /* Adjust the line height as needed */
-  }
-
-  #spare-time {
-    font-size: 0.7rem;
-    /* Adjust the font size as needed */
-    letter-spacing: 0.03rem;
-    /* Adjust the letter spacing as needed */
-  }
-
-  .roller #rolltext {
-    animation: slide-mob 5s infinite;
-  }
-
-  @keyframes slide-mob {
-    0% {
-      top: 0;
-    }
-
-    25% {
-      top: -1rem;
-      /* Adjust the value as needed */
-    }
-
-    50% {
-      top: -2rem;
-      /* Adjust the value as needed */
-    }
-
-    72.5% {
-      top: -3rem;
-      /* Adjust the value as needed */
     }
   }
 }
