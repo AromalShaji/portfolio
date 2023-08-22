@@ -6,18 +6,25 @@
 
 body {
   margin: 0;
+  margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
+  /* At least the height of the viewport */
+  display: flex;
+  flex-direction: column;
+  /* Stack elements vertically */
+  justify-content: space-between;
+  /* Distribute space between header and content */
   background: url('onam-festival-symbol-painti.jpg') no-repeat center center fixed;
   background-size: cover;
+  overflow: hidden;
+  /* Prevent scrollbars */
+
 }
 
 .main {
-  height: 100vh;
-  width: 100%;
+  flex: 1;
+  /* Allow main content to take remaining vertical space */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,6 +39,7 @@ body {
   top: 10px;
   left: 0;
   right: 0;
+  text-align: center;
 }
 
 .small-image2 {
@@ -174,4 +182,11 @@ h1 {
   100% {
     transform: translateX(-100%);
   }
+}
+
+.centered-image {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  width: auto;
 }
