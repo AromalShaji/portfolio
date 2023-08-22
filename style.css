@@ -41,7 +41,7 @@ body {
   top: 10px;
   width: 130px;
   height: 200px;
-} 
+}
 
 .small-image {
   width: 130px;
@@ -60,7 +60,7 @@ h1 {
 }
 
 .roller {
-  font-size: 2rem;
+  font-size: 1.8rem;
   height: 4.125rem;
   line-height: 4rem;
   position: relative;
