@@ -24,14 +24,23 @@ body {
   text-align: center;
 }
 
-.small-image {
-  align-items: center;
+
+.image-container {
+  display: flex;
   justify-content: center;
   position: absolute;
   top: 10px;
+  left: 0;
+  right: 0;
+}
+
+.small-image {
   width: 130px;
   height: 200px;
+  display: block;
+  margin: 0 auto;
 }
+
 
 h1 {
   text-align: center;
@@ -156,4 +165,9 @@ h1 {
   100% {
     transform: translateX(-100%);
   }
+}
+
+.centered-image {
+  max-width: 100%;
+  max-height: 100%;
 }

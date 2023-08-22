@@ -5,16 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="script.js"></script>
   <title>GCK ONAM</title>
 </head>
 
 <body>
   <div class="main">
-    <img src="WhatsApp Image 2023-08-21 at 23.57.57-fotor-bg-remover-202308220156.png" alt="Small Image"
-      class="small-image">
-    <h1>
+    <div class="image-container">
+      <img src="WhatsApp Image 2023-08-21 at 23.57.57-fotor-bg-remover-202308220156.png" alt="" class="small-image">
+    </div>
 
+    <h1>
       <div class="boxes">
         <div></div>
         <div></div>
@@ -38,12 +38,40 @@
       </div>
 
       <div class="astronaut">
-        <img src="WhatsApp Image 2023-08-21 at 23.57.57-fotor-bg-remover-202308220156.png" alt="" class="src">
-      </div>
+        <img id="current-image" src="" alt="Current Image" class="small-image">
+      </div><br>
 
     </h1>
   </div>
 </body>
+
+<script>
+
+  const imageElement = document.getElementById("current-image");
+  const images = [
+    "WhatsApp Image 2023-08-21 at 23.57.57-fotor-bg-remover-202308220156.png",
+    "1.png",
+    "2.png",
+    "3.png",
+    "4.png"
+  ];
+
+  let currentIndex = 0;
+
+  function displayNextImage() {
+    imageElement.src = images[currentIndex];
+    currentIndex = (currentIndex + 1) % images.length;
+  }
+
+  // Display the first image
+  displayNextImage();
+
+  // Change image every 5 seconds
+  setInterval(displayNextImage, 1000);
+
+</script>
+
+
 
 <style>
   .boxes div {
