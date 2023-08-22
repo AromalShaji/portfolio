@@ -34,6 +34,15 @@ body {
   right: 0;
 }
 
+.small-image2 {
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 10px;
+  width: 130px;
+  height: 200px;
+} 
+
 .small-image {
   width: 130px;
   height: 200px;
