@@ -1381,3 +1381,79 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+
+
+
+.boxes div {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: 2px solid #dda330
+}
+
+.boxes div:nth-child(1) {
+  top: 70%;
+  left: 10%;
+  animation: box-animate 10s infinite
+}
+
+.boxes div:nth-child(2) {
+  top: 20%;
+  left: 80%;
+  animation: box-animate 9s infinite
+}
+
+.boxes div:nth-child(3) {
+  top: 50%;
+  left: 50%;
+  animation: box-animate 6s infinite
+}
+
+.boxes div:nth-child(4) {
+  top: 80%;
+  left: 60%;
+  animation: box-animate 15s infinite
+}
+
+.boxes div:nth-child(5) {
+  top: 30%;
+  left: 30%;
+  animation: box-animate 9s infinite
+}
+
+.boxes div:nth-child(6) {
+  top: 90%;
+  left: 90%;
+  animation: box-animate 12s infinite
+}
+
+.boxes div:nth-child(7) {
+  top: 80%;
+  left: 30%;
+  animation: box-animate 2s infinite
+}
+
+.boxes div:nth-child(8) {
+  top: 40%;
+  left: 20%;
+  animation: box-animate 2s infinite
+}
+
+.boxes div:nth-child(9) {
+  top: 50%;
+  left: 80%;
+  animation: box-animate 2s infinite
+}
+
+@keyframes box-animate {
+  0% {
+      transform: scale(0) translateY(0) rotate(0);
+      opacity: 1
+  }
+
+  100% {
+      transform: scale(1.3) translateY(-90px) rotate(360deg);
+      opacity: 0
+  }
+}
