@@ -252,4 +252,41 @@
    */
   new PureCounter();
 
+  const textArray = ["I'm a Software Developer", "A Gamer", "A Football player", "A Freelancer"];
+let i = 0;
+let j = 0;
+let currentText = '';
+let isDeleting = false;
+let speed = 100;
+
+function typeWriter() {
+  if (isDeleting) {
+    currentText = textArray[i].substring(0, j--);
+  } else {
+    currentText = textArray[i].substring(0, j++);
+  }
+
+  document.getElementById('typewriter').textContent = currentText;
+
+  if (!isDeleting && j === textArray[i].length) {
+    isDeleting = true;
+    speed = 100;
+  } else if (isDeleting && j === 0) {
+    isDeleting = false;
+    i++;
+    speed = 100;
+
+    if (i === textArray.length) {
+      i = 0;
+    }
+  }
+
+  setTimeout(typeWriter, speed);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  setTimeout(typeWriter, 500);
+});
+
+
 })()
