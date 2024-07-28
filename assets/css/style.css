@@ -663,7 +663,7 @@ section {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #ffb727;
+  background: linear-gradient(to right, #590025, #d10000);
 }
 
 /*--------------------------------------------------------------
