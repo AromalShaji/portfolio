@@ -332,6 +332,12 @@ h6 {
   right: 0;
 }
 
+@media (max-width: 767px) {
+  #hero {
+    background: linear-gradient(to right, black, transparent), url("../img/hero-bg.webp") center center;
+  }
+}
+
 #hero .hero-container {
   position: absolute;
   bottom: 0;
